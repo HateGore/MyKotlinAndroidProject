@@ -22,6 +22,7 @@ class PrefExActivity : AppCompatActivity() {
         pref_load.setOnClickListener() {
             pref_edit.setText(preference.getString(namefieldKey, ""))
             pref_checkBox.isChecked = preference.getBoolean(pushCheckboxKey, false)
+            // todo : prefExActivity로 런쳐 엑티비티 변경
         }
     }
 }
